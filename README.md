@@ -8,6 +8,7 @@ From this folder:
 3. Run `vendor/bin/phpunit FizzBuzz/test/FizzBuzzTest.php`
 
 _This requires **minimum** PHP version 7.4 as FizzBuzzTest.php (line 10) uses a typed property (remove the `FizzBuzz` type if you're on a lower version)._ 
+_Otherwise, the minimum PHP version is 7.1 as FizzBuzz.php (lines 7-8) uses const visibility._ 
 
 ## Business requirements
 Write a class with a method that takes 2 integers between 1 and 100.
