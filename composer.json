@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "psr-4": {"FizzBuzz\\": "FizzBuzz"}
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
+}
