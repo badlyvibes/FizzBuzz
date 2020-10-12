@@ -59,25 +59,25 @@ class FizzBuzzTest extends TestCase
 
     public function testToParameterTooHigh()
     {
-        $this->expectException(\Error::class);
+        $this->expectException(\OutOfBoundsException::class);
         $this->fizzBuzz->run(1, 101);
     }
 
     public function testFromParameterTooHigh()
     {
-        $this->expectException(\Error::class);
+        $this->expectException(\OutOfBoundsException::class);
         $this->fizzBuzz->run(101, 100);
     }
 
     public function testToParameterTooLow()
     {
-        $this->expectException(\Error::class);
+        $this->expectException(\OutOfBoundsException::class);
         $this->fizzBuzz->run(1, 0);
     }
 
     public function testFromParameterTooLow()
     {
-        $this->expectException(\Error::class);
+        $this->expectException(\OutOfBoundsException::class);
         $this->fizzBuzz->run(0, 100);
     }
 }

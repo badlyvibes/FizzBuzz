@@ -14,9 +14,9 @@ class FizzBuzz
     public function run(int $from, int $to)
     {
         if ($from > self::MAX || $to > self::MAX) {
-            throwException(new \TypeError('Input cannot be more than ' . self::MAX));
+            throw new \OutOfBoundsException('Input cannot be more than ' . self::MAX);
         } elseif ($from < self::MIN || $to < self::MIN) {
-            throwException(new \TypeError('Input cannot be less than ' . self::MIN));
+            throw new \OutOfBoundsException('Input cannot be less than ' . self::MIN);
         }
 
         // This boolean controls whether the loop counts up or down
