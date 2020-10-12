@@ -5,7 +5,7 @@ From this folder:
 
 1. Run `composer install`
 2. Run `composer dump-autoload`
-3. Run `vendor/bin/phpunit src/domain/FizzBuzz/test/FizzBuzzTest.php`
+3. Run `vendor/bin/phpunit FizzBuzz/test/FizzBuzzTest.php`
 
 ## Business requirements
 Write a class with a method that takes 2 integers between 1 and 100.
