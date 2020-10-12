@@ -35,9 +35,9 @@ class FizzBuzz
 
             // This is the current number between 1 and 100:
             //  If incrementing:
-            //      Increase 'from' parameter by one each time round the loop
+            //      Increase using 'from' parameter plus one each time round the loop
             //  Otherwise:
-            //      Decrease 'to' parameter by one each time round the loop
+            //      Decrease using 'to' parameter minus one each time round the loop
             $current = $incrementing ? $from + $i : $to + ($i - 1);
 
             echo $current;
